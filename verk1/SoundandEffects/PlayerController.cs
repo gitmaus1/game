@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        // nær í og gerir tilbúið
+        // nÃ¦r Ã­ og gerir tilbÃºiÃ°
         playerRb = GetComponent<Rigidbody>();
         Physics.gravity *= gravityModifier;
         playerAnim = GetComponent<Animator>();
@@ -28,17 +28,17 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        //stjórnar jump ef plaer er á jörð og ekki dáin
+        //stjÃ³rnar jump ef plaer er Ã¡ jÃ¶rÃ° og ekki dÃ¡in
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround && !gameOver)
         {
             playerRb.AddForce(Vector3.up * jump, ForceMode.Impulse);
-            // gerir false þegar han hopar svo hann geti ekki hopað í lofti
+            // gerir false Ã¾egar han hopar svo hann geti ekki hopaÃ° Ã­ lofti
             isOnGround = false;
             // hop animation
             playerAnim.SetTrigger("Jump_trig");
             // stopar dirtParticle ef hop
             dirtParticle.Stop();
-            // hljóð ef hopað
+            // hljÃ³Ã° ef hopaÃ°
             playerAudio.PlayOneShot(jumpSound, 1.0f);
 
         }
@@ -46,11 +46,11 @@ public class PlayerController : MonoBehaviour
     // ef snertir 
     private void OnCollisionEnter(Collision collision)
     {
-        // ef snertir jörð getur hann hopað aftur
+        // ef snertir jÃ¶rÃ° getur hann hopaÃ° aftur
         if (collision.gameObject.CompareTag("Ground"))
         {
             isOnGround = true;
-            // kveikir á dirtParticle ef snertir jörð
+            // kveikir Ã¡ dirtParticle ef snertir jÃ¶rÃ°
             dirtParticle.Play();
         }
         // ef snertir Obstacle
@@ -58,14 +58,14 @@ public class PlayerController : MonoBehaviour
         {
             gameOver = true;
             Debug.Log("Game Over!");
-            // dauða animation
+            // dauÃ°a animation
             playerAnim.SetBool("Death_b",true);
             playerAnim.SetInteger("DeathType_int", 1);
             // spilar spreingingu
             explosionParticle.Play();
-            // stopar dirtParticle á dauða
+            // stopar dirtParticle Ã¡ dauÃ°a
             dirtParticle.Stop();
-            // ef klesir á
+            // ef klesir Ã¡
             playerAudio.PlayOneShot(crashSound, 1.0f);
         }
     }
