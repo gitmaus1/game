@@ -9,10 +9,10 @@ public class repeatBackground : MonoBehaviour
     private float repeatWith;
     void Start()
     {
-        // gerir start stağsetningu
+        // gerir start staÃ°setningu
         startPos =  transform.position;
 
-        // with backgrunds deilt meğ 2
+        // with backgrunds deilt meÃ° 2
         repeatWith = GetComponent<BoxCollider>().size.x / 2;
         
     }
