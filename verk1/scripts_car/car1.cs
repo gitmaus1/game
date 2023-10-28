@@ -16,12 +16,12 @@ public class car1 : MonoBehaviour
     }
     void Update()
     {
-        // nÊr Ì inputin
+        // n√¶r √≠ inputin
         horizontalInput = Input.GetAxis("Horizontal");
         forwardInput = Input.GetAxis("Vertical");
-        // hreifir bÌll ·fram og aftur·back
+        // hreifir b√≠ll √°fram og aftur√°back
         transform.Translate(Vector3.forward * Time.deltaTime*speed * forwardInput);
-        // snÌr bÌll
+        // sn√≠r b√≠ll
         transform.Rotate(Vector3.up,TurnSpeed * horizontalInput * Time.deltaTime);
     }
 }
