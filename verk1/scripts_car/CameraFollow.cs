@@ -22,11 +22,11 @@ public Transform target;
     void LateUpdate()
     {
  
-        // lætur mindavjel elta leikman
+        // lÃ¦tur mindavjel elta leikman
         transform.position = player.transform.TransformPoint(offset);
-        // lætue mindavjel snúast meğ bíll
+        // lÃ¦tue mindavjel snÃºast meÃ° bÃ­ll
         transform.eulerAngles = player.transform.eulerAngles;
-        // lætue mindavjel líta smá niğur 
+        // lÃ¦tue mindavjel lÃ­ta smÃ¡ niÃ°ur 
         transform.Rotate(5.0f, 0.0f, 0.0f, Space.Self);
 
 
