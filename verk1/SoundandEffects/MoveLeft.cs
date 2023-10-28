@@ -23,7 +23,7 @@ public class MoveLeft : MonoBehaviour
         if (playerControllerScript.gameOver == false) { 
         // hreifir bagrun og obsticles
         transform.Translate(Vector3.left * Time.deltaTime * speed); }
-        // eiðir obsticles þegar er búið að nota þá
+        // eiÃ°ir obsticles Ã¾egar er bÃºiÃ° aÃ° nota Ã¾Ã¡
         if (transform.position.x < leftBound && gameObject.CompareTag("Obstacle"))
         {
             Destroy(gameObject);
