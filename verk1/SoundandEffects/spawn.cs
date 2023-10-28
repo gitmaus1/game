@@ -5,7 +5,7 @@ using UnityEngine;
 public class spawn : MonoBehaviour
 {
     public GameObject ObsticlePreafab;
-    //  stðurin þar sem hlutur spawnar
+    //  stÃ°urin Ã¾ar sem hlutur spawnar
     private Vector3 spawnPos = new Vector3(50, 0, 0);
     private float startDelay = 2;
     private float repeatRate = 2;
@@ -24,7 +24,7 @@ public class spawn : MonoBehaviour
     {
         
     }
-    // bír til hindranir(obsticles) ef gameover er false
+    // bÃ­r til hindranir(obsticles) ef gameover er false
     void spawnobsticle()
     {
         if (playerControllerScript.gameOver == false)
