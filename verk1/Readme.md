@@ -8,12 +8,14 @@ https://youtu.be/MBPlEvcGl1c
 
 
 <h1>spurningar</h1>
-i.	Scene view
+<h3>i.	Scene view</h3>
+
 scene er glugin þar sem þú sjerð alt sem þú ert að vinna með game er glugin sem sínir bara main camera
-ii.	Game view
 
-iii.	Project
+<h3>ii.	Game view</h3>
 
-iv.	Hierarchy
+<h3>iii.	Project</h3>
 
-v.	Inspector
+<h3>iv.	Hierarchy</h3>
+
+<h3>v.	Inspector</h3>
