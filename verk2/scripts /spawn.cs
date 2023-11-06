@@ -5,7 +5,7 @@ using UnityEngine;
 public class spawn : MonoBehaviour
 {
     public GameObject ObsticlePreafab;
-    //  stðurin þar sem hlutur spawnar
+    //  stÃ°urin Ã¾ar sem hlutur spawnar
     private Vector3 spawnPos = new Vector3(-12, 10, 59);
     private Vector3 spawnPos2 = new Vector3(-84, 23, 125);
     private float startDelay = 2;
@@ -29,13 +29,13 @@ public class spawn : MonoBehaviour
     {
         // hreifir bagrun og obsticles
         transform.Translate(Vector3.left * Time.deltaTime * speed);
-        // eiðir obsticles þegar er búið að nota þá
+        // eiÃ°ir obsticles Ã¾egar er bÃºiÃ° aÃ° nota Ã¾Ã¡
         if (transform.position.y < leftBound && gameObject.CompareTag("hindrun"))
         {
             Destroy(gameObject);
         }
     }
-    // bír til hindranir(obsticles) ef gameover er false
+    // bÃ­r til hindranir(obsticles) ef gameover er false
     void spawnobsticle()
     {
         
@@ -45,6 +45,6 @@ public class spawn : MonoBehaviour
 
 
     }
-        // eiðir obsticles þegar er búið að nota þá
+        // eiÃ°ir obsticles Ã¾egar er bÃºiÃ° aÃ° nota Ã¾Ã¡
        
 }
