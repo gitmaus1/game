@@ -1,4 +1,4 @@
-<h1>videos</h1>
+<h1>video</h1>
 
 
 
