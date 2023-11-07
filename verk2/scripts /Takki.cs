@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -20,8 +20,7 @@ public class Takki : MonoBehaviour
         {
             Debug.Log("cccccccccccccccccccccccccccccccccccccccccccc");
             texti.text = "Lokastig " + saveHlutir.Life + " af 8 ítu á taka til að endurstarta" ;
-            // endurstilir líf
-            saveHlutir.Life = 0;
+
 
 
         }
@@ -33,6 +32,8 @@ public class Takki : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             Debug.Log("SPACE");
+            // endurstilir líf
+            saveHlutir.Life = 0;
             SceneManager.LoadScene(1);
         }
     }
@@ -45,6 +46,8 @@ public class Takki : MonoBehaviour
         public void Byrja()
     {
         Debug.Log("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
+        // endurstilir líf
+        saveHlutir.Life = 0;
         SceneManager.LoadScene(1);
 
     }
